@@ -1,3 +1,8 @@
+# このリポジトリについて
+1. おおもとは　<code> > npx create-react-app . </code> コマンドで自動生成しました
+2. [動画教材](https://youtu.be/nRCNL9T3J98)を参考にして不要なファイルおよびApp.cssの内容を削除しました
+
+<hr/>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
