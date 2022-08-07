@@ -7,7 +7,7 @@
 # HTML要素の復習
 
 ### `<label>`    
-<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/label" target="_blank">Mdnで詳しい解説を読む</a>
+<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/label" target="_blank" rel=“noopener”>Mdnで詳しい解説を読む</a>
 
 - `<label>` を `<input>` 要素に関連付けるには、 `<input>` に id 属性を設定しなければなりません。そして `<label>` に for 属性を設定して、値を input の id と同じにします。
 
