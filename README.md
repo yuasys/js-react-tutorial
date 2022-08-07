@@ -3,9 +3,28 @@
 2. [動画教材](https://youtu.be/nRCNL9T3J98)を参考にして不要なファイルおよびApp.cssの内容を削除しました
 
 <hr/>
+
 # HTML要素の復習
 
+### `<label>`    
+[mdn](https://developer.mozilla.org/ja/docs/Web/HTML/Element/label)で詳しい解説を読む
 
+- `<label>` を `<input>` 要素に関連付けるには、 `<input>` に id 属性を設定しなければなりません。そして `<label>` に for 属性を設定して、値を input の id と同じにします。
+
+```html:
+    <label for="cheese">Do you like cheese?</label>
+    <input type="checkbox" " id="cheese">
+```
+- 他の方法として、 `<input>` を直接 `<label>` の内側に入れることができますが、この場合は関連付けが明確なので、 for および id 属性は必要ありません。
+
+```html:
+<label>Do you like peas?
+<input type="checkbox" name="peas">
+</label>
+```
+
+
+<hr/>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
