@@ -4,7 +4,8 @@
 
 # ハンズオン解説
 
-## -01 「タスクを追加」ボタンの作り方
+## -01 「タスクを追加」ボタンの作り方 
+[🌵branch:step01](https://github.com/yuasys/js-react-tutorial/edit/step1/README.md)
 
 1. 「タスクを追加」ボタンのonClick属性に _任意の関数名handleAddTodo_ を設定する
 
@@ -49,17 +50,17 @@ const handleAddTodo = () => {
 
 - `<label>` を `<input>` 要素に関連付けるには、 `<input>` に id 属性を設定しなければなりません。そして `<label>` に for 属性を設定して、値を input の id と同じにします。
 
-```html:
+~~~html
     <label for="cheese">Do you like cheese?</label>
     <input type="checkbox" " id="cheese">
-```
+~~~
 - 他の方法として、 `<input>` を直接 `<label>` の内側に入れることができますが、この場合は関連付けが明確なので、 for および id 属性は必要ありません。
 
-```html:
+~~~html
 <label>Do you like peas?
 <input type="checkbox" name="peas">
 </label>
-```
+~~~
 
 
 <hr/>
