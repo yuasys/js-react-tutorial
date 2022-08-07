@@ -2,44 +2,43 @@
 1. おおもとは　<code> > npx create-react-app . </code> コマンドで自動生成しました
 2. [動画教材](https://youtu.be/nRCNL9T3J98)を参考にして不要なファイルおよびApp.cssの内容を削除しました
 
-# 「タスクを追加」ボタンの作り方
+# ハンズオン解説
 
-1. 「タスクを追加」ボタンにonClick属性に任意の{関数名}を設定する
+## -01 「タスクを追加」ボタンの作り方
 
-```html:
-    <button onClick={handleAddTodo}>タスクを追加</button>
-```
+1. 「タスクを追加」ボタンのonClick属性に _任意の関数名handleAddTodo_ を設定する
 
-2. 関数App(){　～　}の中で関数を定義する
+~~~html
+    <button onClick={handleAddTodo} >タスクを追加</button>
+~~~
 
-```javascript:
+2. 関数Appの中で _関数handleAddTodo_ を定義する
+
+~~~javascript
 const handleAddTodo = () => {
     //タスクを追加する
  }
-```
+~~~
 
 3. タスクを入力するinput要素の入力値を取得する  
    (1)  useRefと呼ばれるhooksメソッドをreactから取得する
    
-   ```javascript:
+   ~~~javascript
    import {useRef} from "react":
-   ```
+   ~~~
    
-    (2) 関数App(){ ～ }の中でuseRefの変数todoNameRef(変数名任意)を宣言する
+    (2) 関数Appの中でuseRefの変数todoNameRef(変数名任意)を宣言する
     
-    ```javascriopt:
+    ~~~javascript
     const todoNameRef = useRef();
-    ```
+    ~~~
     
-    (3) 取得したいinput要素にref属性を追加し、ref属性の値としてuseRef変数（ここではtodoNameRef）を設定する
+    (3) 取得したいinput要素にref属性を追加し、その値として任意のuseRef変数( _ここではtodoNameRef_ )を設定する
     
-    ```html:
+    ~~~html
     <input type="text" ref={todoNameRef} />
-    ```
+    ~~~
     
-    
-    
-
 
 <hr/>
 
