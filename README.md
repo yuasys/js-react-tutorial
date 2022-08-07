@@ -9,17 +9,17 @@
 
 1. 「タスクを追加」ボタンのonClick属性に _任意の関数名handleAddTodo_ を設定する
 
-~~~html
-    <button onClick={handleAddTodo} >タスクを追加</button>
-~~~
+    ~~~html
+        <button onClick={handleAddTodo} >タスクを追加</button>
+    ~~~
 
 2. 関数Appの中で _関数handleAddTodo_ を定義する
 
-~~~javascript
-const handleAddTodo = () => {
-    //タスクを追加する
- }
-~~~
+    ~~~javascript
+    const handleAddTodo = () => {
+        //タスクを追加する
+     }
+    ~~~
 
 3. タスクを入力するinput要素の入力値を取得する  
    (1)  useRefと呼ばれるhooksメソッドをreactから取得する
